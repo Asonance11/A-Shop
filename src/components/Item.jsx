@@ -7,7 +7,7 @@ const Item = (props) => {
 		<section className="w-full flex flex-col gap-2">
 			<img src={product.image} alt={product.alt} className="w-full" />
 			<hr />
-			<ul className="text-white flex flex-col gap-4">
+			<ul className="text-white flex flex-col gap-4 font-sans">
 				<li className="flex items-center justify-between">
 					<p>Photographer</p>
 					<p>{product.photographer}</p>
