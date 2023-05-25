@@ -19,7 +19,7 @@ const Item = (props) => {
 				<li className="flex items-center justify-between">
 					<button
 						type="button"
-						className="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey"
+						className="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey transition-all duration-500 ease-in-out   hover:from-foggyBlue hover:to-forestGreen"
 					>
 						<Link to={`/shop/${product.id}`}>More Information</Link>
 					</button>
