@@ -22,6 +22,5 @@ export default async function fetchProducts() {
 			price: product.height,
 		};
 	});
-	console.log(products);
 	return products;
 }
