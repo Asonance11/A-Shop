@@ -2,16 +2,15 @@ import React from 'react';
 import Item from '../components/Item';
 
 const Shop = ({ products }) => {
-	return (
-		<main>
-			<h2>Products</h2>
+	const items = products.map((item) => <Item product={item} key={item.num} />);
 
-			<div>
-				{products.map((item) => {
-					<Item product={item} key={item.num} />;
-				})}
-			</div>
-		</main>
+	return (
+		<section className="pt-24 bg-darkGrey px-8">
+			<h2 className="text-3xl text-white font-bold font-serif italic text-center">
+				Products
+			</h2>
+			<div className="grid grid-cols-3 gap-8 mt-4">{items}</div>
+		</section>
 	);
 };
 
