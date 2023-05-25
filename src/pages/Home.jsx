@@ -18,8 +18,8 @@ const Home = () => {
 				</figcaption>
 			</figure>
 			<div className="flex items-center justify-between mt-4 px-8">
-				<p className="text-md text-white font-normal">
-					Shop for framed photos from all around the world
+				<p className="text-xl text-white font-normal">
+					Shop for framed photos from all around the world.
 				</p>
 				<button
 					type="button"
