@@ -15,7 +15,7 @@ export default async function fetchProducts() {
 			id: product.id,
 			photographer: product.photographer,
 			photographerUrl: product.photographer_url,
-			image: product.src.lanadscape,
+			image: product.src.landscape,
 			url: product.url,
 			imageSize: `${product.width} x ${product.height}`,
 			alt: product.alt,
