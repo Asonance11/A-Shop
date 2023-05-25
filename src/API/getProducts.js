@@ -8,5 +8,20 @@ export default async function fetchProducts() {
 	});
 
 	response = await response.json();
-	console.log(response);
+
+	const products = response.photos.map((product, index) => {
+		return {
+			num: index + 1,
+			id: product.id,
+			photographer: product.photographer,
+			photographerUrl: product.photographer_url,
+			image: product.src.lanadscape,
+			url: product.url,
+			imageSize: `${product.width} x ${product.height}`,
+			alt: product.alt,
+			price: product.height,
+		};
+	});
+	console.log(products);
+	return products;
 }
