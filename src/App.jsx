@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import fetchProducts from './API/getProducts';
 import Nav from './components/Nav';
@@ -8,8 +8,12 @@ import Product from './pages/Product';
 import Shop from './pages/Shop';
 
 const App = () => {
+	const [products, setProducts] = useState([]);
+
 	useEffect(() => {
-		fetchProducts();
+		fetchProducts().then((data) => {
+			setProducts(data);
+		});
 	}, []);
 
 	return (
@@ -18,7 +22,7 @@ const App = () => {
 				<Nav />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/shop" element={<Shop />} />
+					<Route path="/shop" element={<Shop products={products} />} />
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/shop/:id" element={<Product />} />
 				</Routes>
