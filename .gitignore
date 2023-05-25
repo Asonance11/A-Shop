@@ -12,9 +12,7 @@ dist
 dist-ssr
 *.local
 
-# API key
 
-config.js
 
 
 # Editor directories and files
