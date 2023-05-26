@@ -1,0 +1,127 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Product component > renders properly 1`] = `
+<div>
+  <section
+    class="pt-24 bg-darkGrey px-8 min-h-screen"
+  >
+    <h2
+      class="text-3xl text-white font-bold font-serif italic text-center"
+    >
+      Product
+    </h2>
+    <div
+      class="grid grid-cols-2 gap-8 mt-8 font-sans items-center"
+    >
+      <img
+        class="w-full"
+      />
+      <ul
+        class="text-white flex flex-col gap-4 "
+      >
+        <li
+          class="flex items-center justify-between"
+        >
+          <p>
+            Photographer:
+          </p>
+          <a
+            class="hover:underline"
+          />
+        </li>
+        <li
+          class="flex items-center justify-between"
+        >
+          <p>
+            Price:
+          </p>
+          <p>
+            $undefined
+          </p>
+        </li>
+        <li
+          class="flex items-center justify-between"
+        >
+          <p>
+            Image size
+          </p>
+          <p />
+        </li>
+        <li
+          class="flex items-center justify-between"
+        >
+          <button
+            class="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey transition-all duration-500 ease-in-out   hover:from-foggyBlue hover:to-forestGreen"
+            type="button"
+          >
+            Add to Cart
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Product component > renders properly when API call completes 1`] = `
+<div>
+  <section
+    class="pt-24 bg-darkGrey px-8 min-h-screen"
+  >
+    <h2
+      class="text-3xl text-white font-bold font-serif italic text-center"
+    >
+      Product
+    </h2>
+    <div
+      class="grid grid-cols-2 gap-8 mt-8 font-sans items-center"
+    >
+      <img
+        class="w-full"
+      />
+      <ul
+        class="text-white flex flex-col gap-4 "
+      >
+        <li
+          class="flex items-center justify-between"
+        >
+          <p>
+            Photographer:
+          </p>
+          <a
+            class="hover:underline"
+          />
+        </li>
+        <li
+          class="flex items-center justify-between"
+        >
+          <p>
+            Price:
+          </p>
+          <p>
+            $undefined
+          </p>
+        </li>
+        <li
+          class="flex items-center justify-between"
+        >
+          <p>
+            Image size
+          </p>
+          <p />
+        </li>
+        <li
+          class="flex items-center justify-between"
+        >
+          <button
+            class="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey transition-all duration-500 ease-in-out   hover:from-foggyBlue hover:to-forestGreen"
+            type="button"
+          >
+            Add to Cart
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
