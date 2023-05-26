@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Item component > renders in the Shop Page 1`] = `
+<div>
+  <section
+    class="w-full flex flex-col gap-2"
+  >
+    <img
+      alt="An image"
+      class="w-full"
+      src="www.awebsite.com/something.jpeg"
+    />
+    <hr />
+    <ul
+      class="text-white flex flex-col gap-4 font-sans"
+    >
+      <li
+        class="flex items-center justify-between"
+      >
+        <p>
+          Photographer
+        </p>
+        <p>
+          me
+        </p>
+      </li>
+      <li
+        class="flex items-center justify-between"
+      >
+        <p>
+          Price
+        </p>
+        <p>
+          $10000
+        </p>
+      </li>
+      <li
+        class="flex items-center justify-between"
+      >
+        <button
+          class="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey transition-all duration-500 ease-in-out   hover:from-foggyBlue hover:to-forestGreen"
+          type="button"
+        >
+          <a
+            href="/shop/undefined"
+          >
+            More Information
+          </a>
+        </button>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

@@ -26,9 +26,9 @@ exports[`Home component > renders properly 1`] = `
       class="flex items-center justify-between mt-4 px-8"
     >
       <p
-        class="text-md text-white font-normal"
+        class="text-xl text-white font-normal"
       >
-        Shop for framed photos from all around the world
+        Shop for framed photos from all around the world.
       </p>
       <button
         class="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey"
