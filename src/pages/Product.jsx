@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { fetchOneProduct } from '../API/getProducts';
 import ProductItem from '../components/ProductItem';
 
-const Product = () => {
+const Product = (props) => {
 	const [product, setProduct] = useState({});
 	const { id } = useParams();
 	useEffect(() => {
@@ -17,7 +17,11 @@ const Product = () => {
 			<h2 className="text-3xl text-white font-bold font-serif italic text-center">
 				Product
 			</h2>
-			<ProductItem product={product} />
+			<ProductItem
+				product={product}
+				cart={props.cart}
+				setCart={props.setCart}
+			/>
 		</section>
 	);
 };
