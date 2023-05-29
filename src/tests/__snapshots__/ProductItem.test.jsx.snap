@@ -54,6 +54,27 @@ exports[`Product component > renders properly when API call completes 1`] = `
         >
           Add to Cart
         </button>
+        <div
+          class="flex items-center gap-2"
+        >
+          <button
+            class="py-1 px-2 rounded-md text-darkGrey bg-white"
+            disabled=""
+            type="button"
+          >
+            -
+          </button>
+          <span>
+            Quantity - 
+            1
+          </span>
+          <button
+            class="py-1 px-2 rounded-md text-darkGrey bg-white"
+            type="button"
+          >
+            +
+          </button>
+        </div>
       </li>
     </ul>
   </div>
