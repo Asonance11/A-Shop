@@ -1,6 +1,7 @@
-import React from 'react';
+import { React, useState } from 'react';
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, cart, setCart }) => {
+	const [quantity, setQuantity] = useState(1);
 	return (
 		<div className="grid grid-cols-2 gap-8 mt-8 font-sans items-center">
 			<img src={product.image} alt={product.alt} className="w-full" />
@@ -30,13 +31,20 @@ const ProductItem = ({ product }) => {
 						<button
 							type="button"
 							className="py-1 px-2 rounded-md text-darkGrey bg-white"
+							onClick={() => {
+								setQuantity(quantity - 1);
+							}}
+							disabled={quantity <= 1 ? true : false}
 						>
 							-
 						</button>
-						<span>Quantity</span>
+						<span>Quantity - {quantity}</span>
 						<button
 							type="button"
 							className="py-1 px-2 rounded-md text-darkGrey bg-white"
+							onClick={() => {
+								setQuantity(quantity + 1);
+							}}
 						>
 							+
 						</button>
