@@ -9,6 +9,7 @@ import Shop from './pages/Shop';
 
 const App = () => {
 	const [products, setProducts] = useState([]);
+	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
 		fetchProducts().then((data) => {
@@ -23,7 +24,10 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/shop" element={<Shop products={products} />} />
-					<Route path="/cart" element={<Cart />} />
+					<Route
+						path="/cart"
+						element={<Cart cart={cart} setCart={setCart} />}
+					/>
 					<Route path="/shop/:id" element={<Product />} />
 				</Routes>
 			</BrowserRouter>
