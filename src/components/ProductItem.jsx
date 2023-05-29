@@ -2,6 +2,17 @@ import { React, useState } from 'react';
 
 const ProductItem = ({ product, cart, setCart }) => {
 	const [quantity, setQuantity] = useState(1);
+
+	const addToCart = (item, quantity) => {
+		item = { quantity: quantity, ...item };
+
+		let updatedCart = cart
+			.filter((cartItem) => cartItem.id !== item.id)
+			.concat(item);
+
+		setCart(updatedCart);
+	};
+
 	return (
 		<div className="grid grid-cols-2 gap-8 mt-8 font-sans items-center">
 			<img src={product.image} alt={product.alt} className="w-full" />
@@ -24,6 +35,9 @@ const ProductItem = ({ product, cart, setCart }) => {
 					<button
 						type="button"
 						className="py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey transition-all duration-500 ease-in-out   hover:from-foggyBlue hover:to-forestGreen"
+						onClick={() => {
+							addToCart(product, quantity);
+						}}
 					>
 						Add to Cart
 					</button>
