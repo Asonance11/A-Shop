@@ -26,6 +26,21 @@ const ProductItem = ({ product }) => {
 					>
 						Add to Cart
 					</button>
+					<div className="flex items-center gap-2">
+						<button
+							type="button"
+							className="py-1 px-2 rounded-md text-darkGrey bg-white"
+						>
+							-
+						</button>
+						<span>Quantity</span>
+						<button
+							type="button"
+							className="py-1 px-2 rounded-md text-darkGrey bg-white"
+						>
+							+
+						</button>
+					</div>
 				</li>
 			</ul>
 		</div>
