@@ -28,7 +28,10 @@ const App = () => {
 						path="/cart"
 						element={<Cart cart={cart} setCart={setCart} />}
 					/>
-					<Route path="/shop/:id" element={<Product />} />
+					<Route
+						path="/shop/:id"
+						element={<Product cart={cart} setCart={setCart} />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</div>
