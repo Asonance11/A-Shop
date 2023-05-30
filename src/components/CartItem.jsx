@@ -13,6 +13,9 @@ const CartItem = ({ item, cart, setCart }) => {
 				<button
 					type="button"
 					className="py-2 px-4 bg-white text-darkGrey rounded-md mt-2"
+					onClick={() => {
+						setCart(cart.filter((product) => product.id !== item.id));
+					}}
 				>
 					Remove from Cart
 				</button>
