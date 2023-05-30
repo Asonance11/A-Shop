@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CartItem component > renders correctly 1`] = `
+<div>
+  <section
+    class="flex items-center gap-4 border text-white font-sans"
+  >
+    <div>
+      <img
+        alt="An image"
+        class=" h-[20vh]"
+        src="www.awebsite.com/something.jpeg"
+      />
+    </div>
+    <div
+      class="w-full"
+    >
+      <p
+        class="capitalize"
+      >
+        me
+      </p>
+      <p>
+        $
+        10000
+      </p>
+      <p>
+        Quantity: 
+      </p>
+      <button
+        class="py-2 px-4 bg-white text-darkGrey rounded-md mt-2"
+        type="button"
+      >
+        Remove from Cart
+      </button>
+    </div>
+  </section>
+</div>
+`;
