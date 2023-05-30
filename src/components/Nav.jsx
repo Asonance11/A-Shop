@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({ cartLength }) => {
 	return (
 		<header
 			className="flex justify-between items-center w-full py-4 px-8 bg-darkGrey fixed z-50
@@ -16,7 +16,11 @@ const Nav = () => {
 					<Link to="/shop">Shop </Link>
 				</li>
 				<li className="text-xl font-medium hover:underline">
-					<Link to="/cart">Cart </Link>
+					{cartLength > 1 ? (
+						<Link to="/cart">Cart </Link>
+					) : (
+						<Link to="/cart">Cart({cartLength}) </Link>
+					)}
 				</li>
 			</ul>
 		</header>
