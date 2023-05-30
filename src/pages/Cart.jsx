@@ -27,6 +27,16 @@ const Cart = ({ cart, setCart }) => {
 				<p>Total Price:</p>
 				<h3>${totalPrice}</h3>
 			</section>
+
+			<button
+				className="mt-4 py-2 px-4 bg-gradient-to-r from-forestGreen via-adventurousYellow to-oceanTurquoise rounded-md text-darkGrey transition-all duration-500 ease-in-out   hover:from-foggyBlue hover:to-forestGreen"
+				onClick={() => {
+					alert('Thank you for shoopping with us');
+					setCart([]);
+				}}
+			>
+				Checkout
+			</button>
 		</main>
 	);
 };
