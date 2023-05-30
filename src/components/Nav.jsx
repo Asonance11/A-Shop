@@ -16,10 +16,10 @@ const Nav = ({ cartLength }) => {
 					<Link to="/shop">Shop </Link>
 				</li>
 				<li className="text-xl font-medium hover:underline">
-					{cartLength > 1 ? (
-						<Link to="/cart">Cart </Link>
-					) : (
+					{cartLength > 0 ? (
 						<Link to="/cart">Cart({cartLength}) </Link>
+					) : (
+						<Link to="/cart">Cart</Link>
 					)}
 				</li>
 			</ul>
