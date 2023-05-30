@@ -3,7 +3,7 @@
 exports[`Product component > renders properly when API call completes 1`] = `
 <div>
   <div
-    class="grid grid-cols-2 gap-8 mt-8 font-sans items-center"
+    class="flex flex-col gap-8 mt-8 font-sans items-center md:grid md:grid-cols-2"
   >
     <img
       alt="An image"
@@ -11,7 +11,7 @@ exports[`Product component > renders properly when API call completes 1`] = `
       src="www.awebsite.com/something.jpeg"
     />
     <ul
-      class="text-white flex flex-col gap-4 "
+      class="text-white flex flex-col gap-4 w-full"
     >
       <li
         class="flex items-center justify-between"

@@ -8,7 +8,7 @@ exports[`CartItem component > renders correctly 1`] = `
     <div>
       <img
         alt="An image"
-        class=" h-[20vh]"
+        class=" h-[22vh] object-cover"
         src="www.awebsite.com/something.jpeg"
       />
     </div>
