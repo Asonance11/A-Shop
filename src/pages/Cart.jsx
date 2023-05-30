@@ -12,7 +12,7 @@ const Cart = ({ cart, setCart }) => {
 				Your Cart
 			</h2>
 
-			<section>{items}</section>
+			<section className="flex flex-col gap-4 mt-4">{items}</section>
 		</main>
 	);
 };

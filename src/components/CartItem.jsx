@@ -2,12 +2,21 @@ import React from 'react';
 
 const CartItem = ({ item, cart, setCart }) => {
 	return (
-		<section>
-			<img src={item.image} alt={item.alt} />
-			<p>{item.photographer}</p>
-			<p>{item.price}</p>
-			<p>{item.quantity}</p>
-			<button type="button">Remove from Cart</button>
+		<section className="flex items-center gap-4 border text-white font-sans">
+			<div>
+				<img src={item.image} alt={item.alt} className=" h-[20vh]" />
+			</div>
+			<div className="w-full">
+				<p className="capitalize">{item.photographer}</p>
+				<p>${item.price}</p>
+				<p>Quantity: {item.quantity}</p>
+				<button
+					type="button"
+					className="py-2 px-4 bg-white text-darkGrey rounded-md mt-2"
+				>
+					Remove from Cart
+				</button>
+			</div>
 		</section>
 	);
 };
