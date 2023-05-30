@@ -33,7 +33,7 @@ exports[`Nav component > renders Nav correctly 1`] = `
         <a
           href="/cart"
         >
-          Cart 
+          Cart
         </a>
       </li>
     </ul>
