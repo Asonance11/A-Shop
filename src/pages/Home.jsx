@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
-		<main className="pt-20 bg-darkGrey h-screen">
+		<main className="pt-20 bg-darkGrey min-h-screen pb-4">
 			<h1 className="absolute text-7xl font-serif italic top-[30%] left-[50%] translate-x-[-50%] z-10 text-white">
 				Catching Moments
 			</h1>
@@ -17,8 +17,8 @@ const Home = () => {
 					</a>
 				</figcaption>
 			</figure>
-			<div className="flex items-center justify-between mt-4 px-8">
-				<p className="text-xl text-white font-normal">
+			<div className="flex items-center mt-4 px-8 flex-col md:justify-between md:flex-row ">
+				<p className=" text-center text-xl text-white font-normal">
 					Shop for framed photos from all around the world.
 				</p>
 				<button

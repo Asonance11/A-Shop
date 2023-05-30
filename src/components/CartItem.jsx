@@ -4,7 +4,11 @@ const CartItem = ({ item, cart, setCart }) => {
 	return (
 		<section className="flex items-center gap-4 border text-white font-sans">
 			<div>
-				<img src={item.image} alt={item.alt} className=" h-[20vh]" />
+				<img
+					src={item.image}
+					alt={item.alt}
+					className=" h-[22vh] object-cover"
+				/>
 			</div>
 			<div className="w-full">
 				<p className="capitalize">{item.photographer}</p>

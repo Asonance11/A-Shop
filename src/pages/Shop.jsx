@@ -9,7 +9,9 @@ const Shop = ({ products }) => {
 			<h2 className="text-3xl text-white font-bold font-serif italic text-center">
 				Products
 			</h2>
-			<div className="grid grid-cols-3 gap-8 mt-4">{items}</div>
+			<div className="grid grid-cols-1 gap-8 mt-4 md:grid-cols-2 lg:grid-cols-3">
+				{items}
+			</div>
 		</section>
 	);
 };

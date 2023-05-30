@@ -14,9 +14,9 @@ const ProductItem = ({ product, cart, setCart }) => {
 	};
 
 	return (
-		<div className="grid grid-cols-2 gap-8 mt-8 font-sans items-center">
+		<div className="flex flex-col gap-8 mt-8 font-sans items-center md:grid md:grid-cols-2">
 			<img src={product.image} alt={product.alt} className="w-full" />
-			<ul className="text-white flex flex-col gap-4 ">
+			<ul className="text-white flex flex-col gap-4 w-full">
 				<li className="flex items-center justify-between">
 					<p>Photographer:</p>
 					<a href={product.photographerUrl} className="hover:underline">
